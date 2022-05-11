@@ -5,30 +5,32 @@
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
 
-  --gradientOne: (135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --gradientTwo: (135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  /* Gradients:
+  One: (135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  Two: (135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+  */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .lk-hero {
-  background-color: red;
   min-height: 100vh;
   display: flex;
 }
 
 .lk-hero .coming-soon {
-  background-color: blue;
-  background: url(images/bg-pattern-desktop.svg);
+  background: url(images/bg-pattern-desktop.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   flex: 55%;
 }
 
 .lk-hero .model-image {
-  background: top / cover url(images/hero-desktop.jpg) no-repeat yellow;
+  background: top / cover url(images/hero-desktop.jpg) no-repeat;
   width: 100%;
   height: auto;
   flex: 45%;
