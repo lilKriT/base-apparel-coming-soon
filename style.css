@@ -57,6 +57,11 @@
   font-weight: 300;
 }
 
+.lk-hero .greetings p {
+  color: var(--desaturated-red);
+  line-height: 1.6;
+}
+
 .lk-hero .model-image {
   /* background: top / cover url(images/hero-desktop.jpg) no-repeat; */
   /* width: 100%; */
@@ -69,4 +74,27 @@
 .lk-hero .model-image img {
   width: 100%;
   height: auto;
+}
+
+.lk-hero .subscribe-to-newsletter {
+  /* background-color: red; */
+  height: 3rem;
+  display: flex;
+}
+
+.lk-hero .subscribe-to-newsletter input[type="email"] {
+  border-radius: 100px;
+  border: 1px solid var(--desaturated-red);
+  width: 100%;
+}
+
+.lk-hero .subscribe-to-newsletter button[type="submit"] {
+  /* display: none; */
+  width: 5rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 100rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
