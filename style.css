@@ -19,19 +19,28 @@
 }
 
 .lk-hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
 }
 
 .lk-hero .coming-soon {
-  background: url(images/bg-pattern-desktop.svg),
+  background: center center / 100% 100% url(images/bg-pattern-desktop.svg) no-repeat,
     linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  flex: 55%;
+  background-color: red;
+  /* flex: 55%; */
+  flex: 60;
 }
 
 .lk-hero .model-image {
-  background: top / cover url(images/hero-desktop.jpg) no-repeat;
+  /* background: top / cover url(images/hero-desktop.jpg) no-repeat; */
+  /* width: 100%; */
+  /* height: auto; */
+  background-color: red;
+  flex: 40;
+  overflow: hidden;
+}
+
+.lk-hero .model-image img {
   width: 100%;
   height: auto;
-  flex: 45%;
 }
