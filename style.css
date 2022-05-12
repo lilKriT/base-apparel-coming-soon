@@ -80,21 +80,36 @@
   /* background-color: red; */
   height: 3rem;
   display: flex;
+  position: relative;
 }
 
 .lk-hero .subscribe-to-newsletter input[type="email"] {
   border-radius: 100px;
   border: 1px solid var(--desaturated-red);
   width: 100%;
+  /* z-index: 1; */
+  color: #000;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
 }
 
 .lk-hero .subscribe-to-newsletter button[type="submit"] {
   /* display: none; */
-  width: 5rem;
+  width: 6rem;
+  height: 100%;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 100rem;
   border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lk-hero .subscribe-to-newsletter button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
