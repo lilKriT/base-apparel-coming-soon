@@ -5,6 +5,8 @@
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
 
+  --content-max: 1200px;
+
   /* Gradients:
   One: (135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   Two: (135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
@@ -24,11 +26,35 @@
 }
 
 .lk-hero .coming-soon {
-  background: center center / 100% 100% url(images/bg-pattern-desktop.svg) no-repeat,
+  background: center center / 100% 100% url(images/bg-pattern-desktop.svg)
+      no-repeat,
     linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  background-color: red;
   /* flex: 55%; */
   flex: 60;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.lk-hero .greetings {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.lk-hero .greetings h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 15px;
+  line-height: 1.2;
+}
+
+.lk-hero .pink {
+  color: var(--desaturated-red);
+  font-weight: 300;
 }
 
 .lk-hero .model-image {
