@@ -31,6 +31,7 @@
     linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   /* flex: 55%; */
   flex: 60;
+  padding-top: 4rem;
 
   display: flex;
   flex-direction: column;
