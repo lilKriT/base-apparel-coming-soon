@@ -108,7 +108,7 @@ body > section {
   position: relative;
 }
 
-.lk-hero .subscribe-to-newsletter input[type="email"] {
+.lk-hero .subscribe-to-newsletter input[type="text"] {
   border-radius: 100px;
   border: 1px solid var(--desaturated-red);
   width: 100%;
