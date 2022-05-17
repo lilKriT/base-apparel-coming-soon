@@ -33,13 +33,11 @@ body > section {
 }
 
 .lk-hero {
-  height: 100vh;
+  min-height: 100vh;
   grid-column: 1 / -1;
 
   display: grid;
   grid-template-columns: 1fr repeat(12, min(calc(100% / 12), 100px)) 1fr;
-  /* gap: 1rem; */
-
 }
 
 .lk-hero .coming-soon {
@@ -87,22 +85,18 @@ body > section {
 }
 
 .lk-hero .model-image {
-  /* background: top / cover url(images/hero-desktop.jpg) no-repeat; */
-  /* width: 100%; */
-  /* height: auto; */
-  background-color: red;
-  flex: 40;
   overflow: hidden;
   grid-column: 9 / 15;
 }
 
 .lk-hero .model-image img {
   width: 100%;
-  height: auto;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .lk-hero .subscribe-to-newsletter {
-  /* background-color: red; */
   height: 3rem;
   display: flex;
   position: relative;
@@ -137,4 +131,32 @@ body > section {
 .lk-hero .subscribe-to-newsletter button[type="submit"]:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template: auto / 1fr;
+    /* gap: 1rem; */
+  }
+
+  body > section {
+    grid-column: 1;
+    grid-template: auto / 1fr;
+  }
+
+  .lk-hero {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .lk-hero .coming-soon {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .lk-hero .model-image {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
 }
