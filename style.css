@@ -157,6 +157,12 @@ body > section {
 
   .lk-hero .model-image {
     grid-column: 1;
+    grid-row: 2;
     grid-template-columns: 1fr;
+  }
+
+  .lk-hero .coming-soon .logo {
+    margin-top: 2rem;
+    grid-row: 1;
   }
 }

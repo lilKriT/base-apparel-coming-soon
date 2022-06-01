@@ -2,18 +2,21 @@ const form = document.querySelector(".subscribe-to-newsletter");
 const email = document.querySelector(".subscribe-to-newsletter #email");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   validateInput();
 });
 
 function validateInput() {
+  let formValid = true;
   let emailValue = email.value.trim();
 
   if (!isValidEmail(emailValue)) {
-    alert("Invalid email");
-  } else {
-    alert("email goooood");
-    form.submit();
+    // alert("Invalid email");
+    formValid = false;
+  }
+
+  if (!formValid) {
+    e.preventDefault();
   }
 }
 
