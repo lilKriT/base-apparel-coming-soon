@@ -17,6 +17,8 @@ function validateInput() {
 
   if (!isValidEmail(emailValue, complexEmailRegex)) {
     formValid = false;
+  } else {
+    
   }
 
   if (!formValid) {
