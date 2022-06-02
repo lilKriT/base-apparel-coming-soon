@@ -105,6 +105,13 @@ body > section {
   width: 100%;
 }
 
+.lk-hero .subscribe-to-newsletter .input p {
+  color: var(--soft-red);
+  padding-left: 1.5rem;
+  padding-top: .2rem;
+  display: none;
+}
+
 .lk-hero .subscribe-to-newsletter input[type="text"] {
   border-radius: 100px;
   border: 1px solid var(--desaturated-red);
@@ -135,6 +142,15 @@ body > section {
 .lk-hero .subscribe-to-newsletter button[type="submit"]:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+}
+
+.lk-hero .subscribe-to-newsletter .input.invalid input{
+  border: 2px solid var(--soft-red);
+  background: calc(100% - 7rem) center url("images/icon-error.svg") no-repeat;
+}
+
+.lk-hero .subscribe-to-newsletter .input.invalid p{
+  display: block;
 }
 
 /* @media screen and (max-width: 768px) {
