@@ -1,5 +1,5 @@
 const form = document.querySelector(".subscribe-to-newsletter");
-const email = document.querySelector(".subscribe-to-newsletter #email");
+const emailField = document.querySelector(".subscribe-to-newsletter #email");
 
 let simpleEmailRegex = /^(.+)@(.+)$/;
 let complexEmailRegex =
@@ -13,12 +13,13 @@ form.addEventListener("submit", (e) => {
 
 function validateInput() {
   let formValid = true;
-  let emailValue = email.value.trim();
+  let email = emailField.value.trim();
 
-  if (!isValidEmail(emailValue, complexEmailRegex)) {
+  if (!isValidEmail(email, complexEmailRegex)) {
     formValid = false;
+    emailField.parentElement.classList.add("invalid");
   } else {
-    
+    emailField.parentElement.classList.remove("invalid");
   }
 
   if (!formValid) {
